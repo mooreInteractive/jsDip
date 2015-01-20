@@ -1,0 +1,22 @@
+.popout {
+  background: gray;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+  li {
+  }
+  a {
+    color: white;
+    text-decoration: none !important; /* yuck. where is the underline coming from? */
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    &:hover {
+      background: #ccc;
+      color: #333;
+      box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.5);
+    }
+  }
+}
+

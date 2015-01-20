@@ -37,21 +37,24 @@
                 <div id="date"></div>
                 <div id="messageBox"></div>
             </div>
-            <div id="map_actions">
-                <div id="movements">
-                    <!-- TODO(ccraciun): Replace these with radio/checkboxes -->
-                    Action
-                    <!-- TODO(ccraciun): Handle separators with ::before and/or ::after css -->
-                    <span class="separator"> : </span>
-                    <a href="#" class="move movement action"><span>Move</span></a>
-                    <span class="separator"> | </span>
-                    <a href="#" class="hold movement action"><span>Hold</span></a>
-                    <span class="separator"> | </span>
-                    <a href="#" class="support movement action"><span>Support</span></a>
-                    <span class="separator"> | </span>
-                    <a href="#" class="convoy movement action"><span>Convoy</span></a>
+            <div id="map_actions" style="display: none;">
+                <div class="movements">
+                  <ul>
+                    <li>
+                      <a href="#" class="move movement action">Move</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hold movement action">Hold</a>
+                    </li>
+                    <li>
+                      <a href="#" class="support movement action">Support</a>
+                    </li>
+                    <li>
+                      <a href="#" class="convoy movement action">Convoy</a>
+                    </li>
+                  </ul>
                 </div>
-                <div id="adjustments">
+                <div class="adjustments">
                     Build/Adjust
                     <span class="separator"> : </span>
                     <a href="#" class="army resupply action"><span>Army</span></a>
@@ -78,10 +81,13 @@
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
     <script src="../bower_components/snap.svg/dist/snap.svg-min.js"></script>
+    <script src="../bower_components/svg.js/dist/svg.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/views/popout_over_svg.js"></script>
+        <script src="scripts/views/action_menu.js"></script>
         <script src="scripts/dipMap.js"></script>
         <script src="scripts/judge.js"></script>
         <script src="scripts/models/state.js"></script>
