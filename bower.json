@@ -5,6 +5,5 @@
     "jquery": "~2.1.1",
     "underscore": "~1.7.0",
     "snap.svg": "~0.3.0",
-    "svg.js": "~1.0.1"
   }
 }
