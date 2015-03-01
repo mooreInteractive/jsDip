@@ -1,5 +1,4 @@
 /* global describe, it */
-var should = require('should');
 var yaml = require('js-yaml');
 var fs = require('fs');
 var _ = require('underscore');
